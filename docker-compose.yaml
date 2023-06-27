@@ -1,0 +1,38 @@
+version: '3'
+services:
+  mysql-xwiki:
+    image: mysql:5.7
+    container_name: mysql-xwiki
+    ports:
+      - 3306:3306
+    volumes:
+      - ./mysql:/var/lib/mysql
+      - ./mysql-init:/docker-entrypoint-initdb.d
+    environment:
+      - MYSQL_ROOT_PASSWORD=xwiki
+      - MYSQL_USER=xwiki
+      - MYSQL_PASSWORD=xwiki
+      - MYSQL_DATABASE=xwiki
+    command: "--character-set-server=utf8 --collation-server=utf8_bin --explicit-defaults-for-timestamp=1"
+    networks:
+      - xwiki-nw
+
+  xwiki:
+    image: xwiki:lts-mysql-tomcat
+    container_name: xwiki
+    depends_on:
+      - mysql-xwiki
+    ports:
+      - 8080:8080
+    volumes:
+      - ./xwiki:/usr/local/xwiki
+    environment:
+      - DB_USER=xwiki
+      - DB_PASSWORD=xwiki
+      - DB_DATABASE=xwiki
+      - DB_HOST=mysql-xwiki
+    networks:
+      - xwiki-nw
+
+networks:
+  xwiki-nw:
