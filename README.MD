@@ -1,3 +1,7 @@
+## Overview
+
+![Diagram](https://user-images.githubusercontent.com/4382333/249262600-3f71f25b-50cd-474a-8790-243ecebb3731.png)
+
 ## Instructions
 
 1. Clone the repo
