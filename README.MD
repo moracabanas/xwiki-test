@@ -8,4 +8,4 @@
     2. Stop xwiki  
         `docker compose down`
 
-Then wait to docker containers to be ready and try (localhost:8080)[localhost:8080]
+Then wait to docker containers to be ready and try [localhost:8080](http://localhost:8080)
