@@ -1,7 +1,4 @@
 version: '2'
-networks:
-  bridge:
-    driver: bridge
 services:
   web:
     image: "xwiki:lts-mariadb-tomcat"
@@ -33,5 +30,5 @@ services:
     networks:
       - xwiki-nw
 
-network:
+networks:
   xwiki-nw:
