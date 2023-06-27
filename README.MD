@@ -1,6 +1,3 @@
-## Overview
-
-![Diagram](https://user-images.githubusercontent.com/4382333/249264644-683bf84d-6f81-4269-bd9a-e452e64edb7f.png)
 
 ## Instructions
 
@@ -13,3 +10,7 @@
         `docker compose down`
 
 Then wait to docker containers to be ready and try [localhost:8080](http://localhost:8080)
+
+## Overview
+
+![Diagram](https://user-images.githubusercontent.com/4382333/249264644-683bf84d-6f81-4269-bd9a-e452e64edb7f.png)
