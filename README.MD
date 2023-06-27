@@ -1,6 +1,6 @@
 ## Overview
 
-https://user-images.githubusercontent.com/4382333/249264644-683bf84d-6f81-4269-bd9a-e452e64edb7f.png
+![Diagram](https://user-images.githubusercontent.com/4382333/249264644-683bf84d-6f81-4269-bd9a-e452e64edb7f.png)
 
 ## Instructions
 
